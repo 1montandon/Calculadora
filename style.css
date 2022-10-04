@@ -1,48 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@600&display=swap');
+@import url('https://css.gg/remove-r.css');
+*{
+    font-family: 'Roboto Mono', monospace;
+}
 body{
     display: grid;
-    height: 100vh;
+    height: 500px;
+    width: 150px;
     justify-content: center;
     align-items: center;    
 }
 .calculadora{
     display: grid;
-    width: 100%;
+    width: 105%;
     height: 100%;
-    grid-template-rows: 225px 150px 150px 150px 150px 150px;
+    grid-template-rows: 305px 150px 150px 150px 150px 150px;
     grid-template-columns: 150px 150px 150px 150px;
-    background-color: rgb(236, 222, 255);
+    background-color: rgb(25, 25, 25);
     border-radius: 30px;
+    justify-content: center;
+    
 }
 #visor{
+    display: grid;
     margin-top: 15px;
     margin-bottom: 15px;
     margin-left: 15px;
     margin-right: 15px;
-    background-color:rgb(218, 192, 255);
+    background-color:rgb(25, 25, 25) ;
     border-radius: 30px;
     grid-column-start: 1;
     grid-column-end: 5;
+    color: white;
+    align-items: end;
+    text-align: center;
+    justify-content: end;
+    font-size: 70px;
 }
 .casinhas{
-    background-color:rgb(218, 192, 255);
+    display: grid;
+    justify-content: center;
+    align-items: center; 
+    background-color:rgb(25, 25, 25);
+    box-shadow: 1px 3px 7px rgb(0, 0, 0), 1px -3px 7px rgb(87, 87, 87, 0.295) ;
     border-radius: 30px;
     margin-top: 10px;
     margin-bottom: 10px;
     margin-left: 10px;
     margin-right: 10px;
-}
-.casagrande1{
-     background-color:rgb(218, 192, 255);
-    border-radius: 30px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    margin-left: 10px;
-    margin-right: 10px;
-    grid-column-start: 1;
-    grid-column-end: 3;
+    font-size: 45px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    color: white;
 }
 .casagrande2{
-    background-color:rgb(218, 192, 255);
+    display: grid;
+    justify-content: center;
+    align-items: center; 
+  background-color:rgb(141, 60, 255);
     border-radius: 30px;
     margin-top: 10px;
     margin-bottom: 10px;
@@ -50,4 +66,10 @@ body{
     margin-right: 10px;
     grid-column-start: 3;
     grid-column-end: 5;
+    font-size: 45px;
+    text-align: center;
+    color: white;
+}
+.roxo{
+ color:rgb(141, 60, 255);
 }
