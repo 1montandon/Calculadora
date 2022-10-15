@@ -5,10 +5,11 @@
 }
 body{
     display: grid;
-    height: 500px;
-    width: 150px;
     justify-content: center;
     align-items: center;    
+}
+#visor{
+    text-shadow:  1px 3px 7px rgb(0, 0, 0);
 }
 .calculadora{
     display: grid;
@@ -37,7 +38,7 @@ body{
     justify-content: end;
     font-size: 70px;
 }
-.casinhas{
+.botoes{
     display: grid;
     justify-content: center;
     align-items: center; 
