@@ -25,10 +25,13 @@ function clica_Operador(event) {
     if (isNaN(visor.innerHTML) === false) {
         if (valor_salvo === null) {
             valor_salvo = Number(visor.innerHTML)
+            console.log(" nao caiu no else do clica operador")
+
         }
         else {
             let result = executa_operacao(valor_salvo, operador_salvo, Number(visor.innerHTML));
             visor.innerHTML = result;
+            console.log("caiu no else do clica operador")
         }
     }
     visor.innerHTML = event.target.innerHTML;
